@@ -11,7 +11,7 @@ using System.Windows.Forms;
 namespace FinanzasApp
 {
     public partial class FormMovimientos : Form
-    {
+    {   
         public FormMovimientos()
         {
             InitializeComponent();

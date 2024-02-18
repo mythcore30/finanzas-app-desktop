@@ -28,11 +28,17 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panel5 = new System.Windows.Forms.Panel();
+            this.pnlReportes = new System.Windows.Forms.Panel();
+            this.lblReportes = new System.Windows.Forms.Label();
+            this.pictureBoxReportes = new System.Windows.Forms.PictureBox();
+            this.pnlDashboard = new System.Windows.Forms.Panel();
+            this.lblDashboard = new System.Windows.Forms.Label();
+            this.pictureBoxDashboard = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -48,16 +54,26 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.pnlBalance = new System.Windows.Forms.Panel();
+            this.lblBalance = new System.Windows.Forms.Label();
+            this.pictureBoxBalance = new System.Windows.Forms.PictureBox();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.lblPerfil = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label7 = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
-            this.label8 = new System.Windows.Forms.Label();
+            this.lblConfiguracion = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
-            this.panel5.SuspendLayout();
+            this.pnlReportes.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxReportes)).BeginInit();
+            this.pnlDashboard.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDashboard)).BeginInit();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvMovimientos)).BeginInit();
             this.panel3.SuspendLayout();
+            this.pnlBalance.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxBalance)).BeginInit();
+            this.panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -68,19 +84,75 @@
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(226)))), ((int)(((byte)(230)))));
             this.panel1.Controls.Add(this.panel6);
             this.panel1.Controls.Add(this.panel5);
+            this.panel1.Controls.Add(this.pnlBalance);
+            this.panel1.Controls.Add(this.pnlReportes);
+            this.panel1.Controls.Add(this.pnlDashboard);
             this.panel1.Location = new System.Drawing.Point(-1, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(203, 682);
             this.panel1.TabIndex = 0;
             // 
-            // panel5
+            // pnlReportes
             // 
-            this.panel5.Controls.Add(this.label7);
-            this.panel5.Controls.Add(this.pictureBox1);
-            this.panel5.Location = new System.Drawing.Point(0, 127);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(203, 47);
-            this.panel5.TabIndex = 0;
+            this.pnlReportes.Controls.Add(this.lblReportes);
+            this.pnlReportes.Controls.Add(this.pictureBoxReportes);
+            this.pnlReportes.Location = new System.Drawing.Point(0, 146);
+            this.pnlReportes.Name = "pnlReportes";
+            this.pnlReportes.Size = new System.Drawing.Size(203, 47);
+            this.pnlReportes.TabIndex = 1;
+            this.pnlReportes.MouseLeave += new System.EventHandler(this.pnlReportes_MouseLeave);
+            this.pnlReportes.MouseHover += new System.EventHandler(this.pnlReportes_MouseHover);
+            // 
+            // lblReportes
+            // 
+            this.lblReportes.AutoSize = true;
+            this.lblReportes.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblReportes.Location = new System.Drawing.Point(83, 16);
+            this.lblReportes.Name = "lblReportes";
+            this.lblReportes.Size = new System.Drawing.Size(53, 15);
+            this.lblReportes.TabIndex = 1;
+            this.lblReportes.Text = "Reportes";
+            // 
+            // pictureBoxReportes
+            // 
+            this.pictureBoxReportes.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxReportes.Image")));
+            this.pictureBoxReportes.Location = new System.Drawing.Point(40, 8);
+            this.pictureBoxReportes.Name = "pictureBoxReportes";
+            this.pictureBoxReportes.Size = new System.Drawing.Size(33, 31);
+            this.pictureBoxReportes.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBoxReportes.TabIndex = 0;
+            this.pictureBoxReportes.TabStop = false;
+            // 
+            // pnlDashboard
+            // 
+            this.pnlDashboard.Controls.Add(this.lblDashboard);
+            this.pnlDashboard.Controls.Add(this.pictureBoxDashboard);
+            this.pnlDashboard.Location = new System.Drawing.Point(0, 99);
+            this.pnlDashboard.Name = "pnlDashboard";
+            this.pnlDashboard.Size = new System.Drawing.Size(203, 47);
+            this.pnlDashboard.TabIndex = 0;
+            this.pnlDashboard.MouseLeave += new System.EventHandler(this.pnlDashboard_MouseLeave);
+            this.pnlDashboard.MouseHover += new System.EventHandler(this.pnlDashboard_MouseHover);
+            // 
+            // lblDashboard
+            // 
+            this.lblDashboard.AutoSize = true;
+            this.lblDashboard.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDashboard.Location = new System.Drawing.Point(83, 16);
+            this.lblDashboard.Name = "lblDashboard";
+            this.lblDashboard.Size = new System.Drawing.Size(65, 15);
+            this.lblDashboard.TabIndex = 1;
+            this.lblDashboard.Text = "Dashboard";
+            // 
+            // pictureBoxDashboard
+            // 
+            this.pictureBoxDashboard.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxDashboard.Image")));
+            this.pictureBoxDashboard.Location = new System.Drawing.Point(40, 4);
+            this.pictureBoxDashboard.Name = "pictureBoxDashboard";
+            this.pictureBoxDashboard.Size = new System.Drawing.Size(38, 38);
+            this.pictureBoxDashboard.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBoxDashboard.TabIndex = 0;
+            this.pictureBoxDashboard.TabStop = false;
             // 
             // panel2
             // 
@@ -116,24 +188,24 @@
             // dgvMovimientos
             // 
             this.dgvMovimientos.AllowUserToAddRows = false;
-            dataGridViewCellStyle13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(236)))), ((int)(((byte)(239)))));
-            dataGridViewCellStyle13.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle13.SelectionBackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle13.SelectionForeColor = System.Drawing.Color.Black;
-            this.dgvMovimientos.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle13;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(236)))), ((int)(((byte)(239)))));
+            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.Color.Black;
+            this.dgvMovimientos.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle7;
             this.dgvMovimientos.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvMovimientos.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(236)))), ((int)(((byte)(239)))));
             this.dgvMovimientos.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgvMovimientos.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             this.dgvMovimientos.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(236)))), ((int)(((byte)(239)))));
-            dataGridViewCellStyle14.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(80)))), ((int)(((byte)(87)))));
-            dataGridViewCellStyle14.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(236)))), ((int)(((byte)(239)))));
-            dataGridViewCellStyle14.SelectionForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvMovimientos.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle14;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(236)))), ((int)(((byte)(239)))));
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(80)))), ((int)(((byte)(87)))));
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(236)))), ((int)(((byte)(239)))));
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvMovimientos.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle8;
             this.dgvMovimientos.ColumnHeadersHeight = 40;
             this.dgvMovimientos.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.colId,
@@ -141,14 +213,14 @@
             this.colConcepto,
             this.colTipoMovimiento,
             this.colFecha});
-            dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(236)))), ((int)(((byte)(239)))));
-            dataGridViewCellStyle15.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle15.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle15.SelectionBackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle15.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle15.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvMovimientos.DefaultCellStyle = dataGridViewCellStyle15;
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(236)))), ((int)(((byte)(239)))));
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle9.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvMovimientos.DefaultCellStyle = dataGridViewCellStyle9;
             this.dgvMovimientos.EnableHeadersVisualStyles = false;
             this.dgvMovimientos.GridColor = System.Drawing.Color.LightSlateGray;
             this.dgvMovimientos.Location = new System.Drawing.Point(263, 383);
@@ -248,53 +320,98 @@
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.White;
-            this.panel4.Location = new System.Drawing.Point(592, 127);
+            this.panel4.Location = new System.Drawing.Point(202, 99);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(217, 179);
+            this.panel4.Size = new System.Drawing.Size(631, 583);
             this.panel4.TabIndex = 5;
+            this.panel4.Visible = false;
+            // 
+            // pnlBalance
+            // 
+            this.pnlBalance.Controls.Add(this.lblBalance);
+            this.pnlBalance.Controls.Add(this.pictureBoxBalance);
+            this.pnlBalance.Location = new System.Drawing.Point(0, 193);
+            this.pnlBalance.Name = "pnlBalance";
+            this.pnlBalance.Size = new System.Drawing.Size(203, 47);
+            this.pnlBalance.TabIndex = 2;
+            this.pnlBalance.MouseLeave += new System.EventHandler(this.pnlBalance_MouseLeave);
+            this.pnlBalance.MouseHover += new System.EventHandler(this.pnlBalance_MouseHover);
+            // 
+            // lblBalance
+            // 
+            this.lblBalance.AutoSize = true;
+            this.lblBalance.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBalance.Location = new System.Drawing.Point(83, 16);
+            this.lblBalance.Name = "lblBalance";
+            this.lblBalance.Size = new System.Drawing.Size(48, 15);
+            this.lblBalance.TabIndex = 1;
+            this.lblBalance.Text = "Balance";
+            // 
+            // pictureBoxBalance
+            // 
+            this.pictureBoxBalance.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxBalance.Image")));
+            this.pictureBoxBalance.Location = new System.Drawing.Point(40, 8);
+            this.pictureBoxBalance.Name = "pictureBoxBalance";
+            this.pictureBoxBalance.Size = new System.Drawing.Size(33, 31);
+            this.pictureBoxBalance.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBoxBalance.TabIndex = 0;
+            this.pictureBoxBalance.TabStop = false;
+            // 
+            // panel5
+            // 
+            this.panel5.Controls.Add(this.lblPerfil);
+            this.panel5.Controls.Add(this.pictureBox1);
+            this.panel5.Location = new System.Drawing.Point(0, 612);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(203, 47);
+            this.panel5.TabIndex = 3;
+            // 
+            // lblPerfil
+            // 
+            this.lblPerfil.AutoSize = true;
+            this.lblPerfil.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPerfil.Location = new System.Drawing.Point(83, 16);
+            this.lblPerfil.Name = "lblPerfil";
+            this.lblPerfil.Size = new System.Drawing.Size(34, 15);
+            this.lblPerfil.TabIndex = 1;
+            this.lblPerfil.Text = "Perfil";
             // 
             // pictureBox1
             // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(40, 8);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(33, 31);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(83, 16);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(65, 15);
-            this.label7.TabIndex = 1;
-            this.label7.Text = "Dashboard";
-            // 
             // panel6
             // 
-            this.panel6.Controls.Add(this.label8);
+            this.panel6.Controls.Add(this.lblConfiguracion);
             this.panel6.Controls.Add(this.pictureBox2);
-            this.panel6.Location = new System.Drawing.Point(0, 174);
+            this.panel6.Location = new System.Drawing.Point(0, 565);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(203, 47);
-            this.panel6.TabIndex = 1;
+            this.panel6.TabIndex = 3;
             // 
-            // label8
+            // lblConfiguracion
             // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(83, 16);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(53, 15);
-            this.label8.TabIndex = 1;
-            this.label8.Text = "Reportes";
+            this.lblConfiguracion.AutoSize = true;
+            this.lblConfiguracion.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblConfiguracion.Location = new System.Drawing.Point(83, 16);
+            this.lblConfiguracion.Name = "lblConfiguracion";
+            this.lblConfiguracion.Size = new System.Drawing.Size(82, 15);
+            this.lblConfiguracion.TabIndex = 1;
+            this.lblConfiguracion.Text = "Configuracion";
             // 
             // pictureBox2
             // 
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
             this.pictureBox2.Location = new System.Drawing.Point(40, 8);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(33, 31);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 0;
             this.pictureBox2.TabStop = false;
             // 
@@ -313,13 +430,22 @@
             this.Name = "Form1";
             this.Text = "Form1";
             this.panel1.ResumeLayout(false);
-            this.panel5.ResumeLayout(false);
-            this.panel5.PerformLayout();
+            this.pnlReportes.ResumeLayout(false);
+            this.pnlReportes.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxReportes)).EndInit();
+            this.pnlDashboard.ResumeLayout(false);
+            this.pnlDashboard.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDashboard)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvMovimientos)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
+            this.pnlBalance.ResumeLayout(false);
+            this.pnlBalance.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxBalance)).EndInit();
+            this.panel5.ResumeLayout(false);
+            this.panel5.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
@@ -347,12 +473,21 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Panel pnlDashboard;
+        private System.Windows.Forms.Label lblDashboard;
+        private System.Windows.Forms.PictureBox pictureBoxDashboard;
+        private System.Windows.Forms.Panel pnlReportes;
+        private System.Windows.Forms.Label lblReportes;
+        private System.Windows.Forms.PictureBox pictureBoxReportes;
+        private System.Windows.Forms.Panel pnlBalance;
+        private System.Windows.Forms.Label lblBalance;
+        private System.Windows.Forms.PictureBox pictureBoxBalance;
         private System.Windows.Forms.Panel panel6;
-        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label lblConfiguracion;
         private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.Label lblPerfil;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 

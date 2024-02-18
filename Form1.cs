@@ -20,7 +20,43 @@ namespace FinanzasApp
             dgvMovimientos.Rows.Add("1", "3000", "Pago Efectivo", "SUPERAVIT", "22-02-24");
             dgvMovimientos.Rows.Add("1", "3000", "Pago Efectivo", "SUPERAVIT", "22-02-24");
             dgvMovimientos.Rows.Add("1", "3000", "Pago Efectivo", "SUPERAVIT", "22-02-24");
-            dgvMovimientos.Rows.Add("1", "3000", "Pago Efectivo", "SUPERAVIT", "22-02-24");
+            dgvMovimientos.Rows.Add("1", "3000", "Pago Efectivo", "SUPERAVIT", "22-02-24");   
+        }
+
+        private void pnlDashboard_MouseHover(object sender, EventArgs e)
+        {
+            pnlDashboard.BackColor = Color.White;
+            pnlDashboard.Cursor = Cursors.Hand;
+        }
+
+        private void pnlDashboard_MouseLeave(object sender, EventArgs e)
+        {
+            pnlDashboard.BackColor = Color.FromArgb(222, 226, 230);
+            pnlDashboard.ForeColor = SystemColors.ControlText;
+        }
+
+        private void pnlReportes_MouseHover(object sender, EventArgs e)
+        {
+            pnlReportes.BackColor = Color.White;
+            pnlReportes.Cursor = Cursors.Hand;
+        }
+
+        private void pnlReportes_MouseLeave(object sender, EventArgs e)
+        {
+            pnlReportes.BackColor = Color.FromArgb(222, 226, 230);
+            pnlReportes.ForeColor = SystemColors.ControlText;
+        }
+
+        private void pnlBalance_MouseHover(object sender, EventArgs e)
+        {
+            pnlBalance.BackColor = Color.White;
+            pnlBalance.Cursor = Cursors.Hand;
+        }
+
+        private void pnlBalance_MouseLeave(object sender, EventArgs e)
+        {
+            pnlBalance.BackColor = Color.FromArgb(222, 226, 230);
+            pnlBalance.ForeColor = SystemColors.ControlText;
         }
     }
 }
