@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace FinanzasApp
 {
-    public partial class FormMovimientos : Form
-    {   
-        public FormMovimientos()
+    public partial class FormReportes : Form
+    {
+        public FormReportes()
         {
             InitializeComponent();
         }

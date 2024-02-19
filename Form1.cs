@@ -58,5 +58,23 @@ namespace FinanzasApp
             pnlBalance.BackColor = Color.FromArgb(222, 226, 230);
             pnlBalance.ForeColor = SystemColors.ControlText;
         }
+
+        private void pnlReportes_Click(object sender, EventArgs e)
+        {
+            FormReportes formReportes = new FormReportes();
+            formReportes.ShowDialog();
+        }
+
+        private void pnlBalance_Click(object sender, EventArgs e)
+        {
+            FormBalance formBalance = new FormBalance();
+            formBalance.ShowDialog();
+        }
+
+        private void btnNuevoMovimiento_Click(object sender, EventArgs e)
+        {
+            FormMovimientos formMovimientos = new FormMovimientos();
+            formMovimientos.ShowDialog();
+        }
     }
 }
